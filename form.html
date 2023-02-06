@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- <script>
+            window.onload = function()
+            {
+                if(localStorage)
+                {
+                    document.getElementById(accountform).addEventListener('submit', function()
+                    {
+                        var name = document.getElementById('name').value;
+                        localStorage.setItem('name',name);
+                    });
+                }
+            }
+        </script> -->
+
+    </head>
+    <body>
+        <form id="accountform" action="account.php" method="POST" class="sign-up">
+            <div class="header"><h1>Create Account</h1></div>
+
+            <div class="body">
+                <div class="row">
+                    <div class="input">
+                        <label>First Name</label>
+                        <input type="text" name="fname" id="fname"/>
+                    </div>
+                    <div class="input">
+                        <label>Last Name</label>
+                        <input type="text" name="lname" id="lname"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password"/>
+                    </div>
+                    <div class="input">
+                        <label>Confirm Password</label>
+                        <input type="password" name="cpassword" id="cpassword"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label>Gender</label>
+                        <div class="radio">
+                            <div>
+                                <label><input type="radio" name="gender" id="gender"/>Male</label>
+                            </div>
+                            <div>
+                                <label><input type="radio" name="gender" id="gender"/>Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label>Hobbies</label>
+                        <div class="check">
+                            <div>
+                                <label><input type="checkbox" name="check" id="check">Cricket</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" name="check" id="check">Designing</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" name="check" id="check">Coding</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label>Source of income</label>
+                        <select>
+                            <option>Employee</option>
+                            <option>Self-employee</option>
+                            <option>Unemployee</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>Income</label>
+                        <div class="range">
+                            <input type="range" name="range" id="range"/>
+                            <label id="income">20K</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label>Upload Picture</label>
+                        <input type="file" name="file" id="file"/>
+                    </div>
+                    <div class="input">
+                        <label>Age</label>
+                        <input type="number" name="Age" id="number"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <button class="btn" input type="submit" onclick="store()" type="button">Submit</button>
+
+                <script  type="text/javascript">
+                    function store(){
+
+                    
+                    var inputFname= document.getElementById("fname");
+                    var inputLname= document.getElementById("lname");
+                    var inputEmail= document.getElementById("email");
+                    var inputPass= document.getElementById("password");
+                    var inputCpass= document.getElementById("cpassword");
+                    var inputGender= document.getElementById("gender");
+                    var inputCheck= document.getElementById("check");
+                    var inputRange= document.getElementById("range");
+                    var inputFile= document.getElementById("file");
+                    var inputNumber= document.getElementById("Age");
+
+
+
+                    localStorage.setItem("fname", inputFname.value);
+                    localStorage.setItem("lname", inputLname.value);
+                    localStorage.setItem("email", inputEmail.value);
+                    localStorage.setItem("password", inputPass.value);
+                    localStorage.setItem("cpassword", inputCpass.value);
+                    localStorage.setItem("gender", inputGender.value);
+                    localStorage.setItem("check", inputCheck.value);
+                    localStorage.setItem("range", inputRange.value);
+                    localStorage.setItem("file", inputFile.value);
+                    localStorage.setItem("Age", inputNumber.value);
+
+                     
+
+                    
+
+
+
+                    
+                      }
+                  </script>
+            </div>
+        </form>
+
+        
+        
+    </body>
+
+    
+</html>
