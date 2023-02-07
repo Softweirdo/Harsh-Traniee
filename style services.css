@@ -1,0 +1,153 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    background:white;
+    width: 100%;
+    padding: 10px;
+}
+
+nav .menu{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu ul{
+    display: inline-flex;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.menu ul li a:hover{
+    color: red;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+}
+  
+  @keyframes fade {
+    from {opacity: .1} 
+    to {opacity: 5}
+}
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+    harsh{
+    background:wheat;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+    display: flex;
+    /* position: relative; */
+}
+
+.xyz{
+    background: white;
+    flex: 1;
+    max-width: 900px;
+}
+
+.xyz label{
+    font-size: 25px;
+    text-decoration: underline rgb(229, 73, 73);
+    padding-left: 20px;
+}
+
+.xyz p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.xyz ul{
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.xyz ul li:hover{
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 20px;   
+}
+
+.abc .bottom-left {
+    position: absolute;
+  bottom: -650px;
+  left: 400px;
+  color: white;
+  font-size: 25px;
+}
+
+.abc .centered {
+    position: absolute;
+    top: 1349px;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+  }
+
+.footer{
+    padding-top: 1px;
+    padding-left: 350px;
+    color: white;
+    background: black;
+}
+

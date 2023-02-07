@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Way 2 india</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="../way 2 india/logo.png"/></a>
+                </div>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="whyus.html">Why us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Faqs.html">FAQs</a></li>
+                    <li><a href="testi.html">Testimonials</a></li>
+                    <li><a href="opprt.html">Opportunities</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="../way 2 india/slider1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="../way 2 india/slider2.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                </div>
+            
+            </nav>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+           
+
+                    <harsh>
+                        <form class="xyz">
+                            <label>INDIA BECKONS</label>
+                            <p>Welcome and congratulations for taking the first step to explore India... the hottest investment destination of the world!!!</p>
+                            <p>Why invest in India?</p>
+                            <ul>
+                                <li>A priority market declared by Government of Canada and EDC</li>
+                                <li>India has 1.2 billion consumers out of which 50% are below 25 years of age</li>
+                                <li>Largest democracy of the world</li>
+                                <li>It is the 10th largest economy of the world 3rd largest on Payment Parity basis</li>
+                                <li>Compelling demographic dividend</li>
+                                <li>GDP growth projections of 7 %</li>
+                                <li>Most of the Fortune 500 companies and many big names from Canada like McCain, Bombardier, Magna, Formglass, RBC and Scotiabank have already invested successfully in India.</li>
+                                <li>Geographically well located to service Europe ,Asia, Far East and the Middle East.</li>
+                                <li>Skilled English speaking man power</li>
+                                <li>Huge investments opportunities in power, ports, airports, roads, railways, services, energy, townships, finance & insurance, defence, education, agriculture, automotive and high tech industries; Investments needed in hundreds of billions</li>
+                                <li>Most of the sectors are open to Foreign Direct Investment.</li>
+                                <li>Attractive incentives offered by Central and State governments to investing companies.</li>
+                            </ul>
+                            <br>
+                        </form>
+                    </harsh>
+                    <footer>
+                        <div class="abc">
+                            <img src="../way 2 india/estimate-bg.jpg" style="width:100%">
+                            <div class="bottom-left">Estimate:</div>
+                            <div class="centered">Can be provided once the scope of work is decided upon.</div>
+                          </div>
+
+                          <div class="footer">
+                            <p>Disclaimer: The Content  in the website for your general information  and use only.              Copyright@2023softweirdosolutions</p>
+                          </div>
+                    </footer>  
+    </body>
+</html>
